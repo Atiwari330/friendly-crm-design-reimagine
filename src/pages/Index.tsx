@@ -1,8 +1,8 @@
 import { Users, UserPlus, Bell } from "lucide-react";
 import { Sidebar } from "@/components/Sidebar";
 import { StatsCard } from "@/components/StatsCard";
-import { RegionDistribution } from "@/components/RegionDistribution";
-import { SocialTraffic } from "@/components/SocialTraffic";
+import { ClientDemographics } from "@/components/ClientDemographics";
+import { ReferralSources } from "@/components/ReferralSources";
 
 const Index = () => {
   return (
@@ -57,10 +57,10 @@ const Index = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2">
-              <RegionDistribution />
+              <ClientDemographics />
             </div>
             <div>
-              <SocialTraffic />
+              <ReferralSources />
             </div>
           </div>
         </div>
