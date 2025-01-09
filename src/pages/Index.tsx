@@ -1,4 +1,4 @@
-import { Coins, Users, BarChart3 } from "lucide-react";
+import { Users, UserPlus, Bell } from "lucide-react";
 import { Sidebar } from "@/components/Sidebar";
 import { StatsCard } from "@/components/StatsCard";
 import { RegionDistribution } from "@/components/RegionDistribution";
@@ -12,13 +12,13 @@ const Index = () => {
       <main className="flex-1 p-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-8">
-            <h1 className="text-2xl font-semibold">Reports</h1>
+            <h1 className="text-2xl font-semibold">Analytics</h1>
             
             <div className="flex items-center gap-4">
               <select className="bg-white border rounded-lg px-4 py-2 text-sm">
-                <option>Sales</option>
-                <option>Marketing</option>
-                <option>Support</option>
+                <option>Clinical</option>
+                <option>Administrative</option>
+                <option>Financial</option>
               </select>
               
               <div className="flex items-center gap-2 bg-white border rounded-lg px-4 py-2">
@@ -33,25 +33,25 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <StatsCard
-              icon={Coins}
-              title="Total Sales"
-              value="$23,569.00"
-              change={10.5}
-              iconClassName="bg-primary/10 text-primary"
-            />
-            <StatsCard
-              icon={BarChart3}
-              title="Product Revenue"
-              value="$11,322.00"
-              change={-10.5}
-              iconClassName="bg-destructive/10 text-destructive"
-            />
-            <StatsCard
               icon={Users}
-              title="Total Deals"
-              value="1,204"
-              change={10.5}
+              title="Active Clients"
+              value="1,247"
+              change={8.2}
               iconClassName="bg-primary/10 text-primary"
+            />
+            <StatsCard
+              icon={UserPlus}
+              title="New Intakes"
+              value="83"
+              change={12.5}
+              iconClassName="bg-primary/10 text-primary"
+            />
+            <StatsCard
+              icon={Bell}
+              title="Pending Follow-Ups"
+              value="156"
+              change={-5.2}
+              iconClassName="bg-destructive/10 text-destructive"
             />
           </div>
 
