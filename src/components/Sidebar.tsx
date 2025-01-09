@@ -1,16 +1,16 @@
-import { Home, Bell, CheckSquare, FileText, Mail, Calendar, PieChart, Building2, Users, Search } from "lucide-react";
+import { Home, Bell, CheckSquare, FileText, MessageSquare, Calendar, BarChart3, Users, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-  { icon: Home, label: "Dashboard", active: false },
-  { icon: Bell, label: "Notifications", active: false },
-  { icon: CheckSquare, label: "Tasks", active: false },
-  { icon: FileText, label: "Notes", active: false },
-  { icon: Mail, label: "Email", active: false },
-  { icon: Calendar, label: "Calendar", active: false },
-  { icon: PieChart, label: "Reports", active: true },
-  { icon: Building2, label: "Companies", active: false },
-  { icon: Users, label: "Contacts", active: false },
+  { icon: Home, label: "Home", active: false },
+  { icon: Bell, label: "Alerts", active: false },
+  { icon: CheckSquare, label: "Follow-Ups", active: false },
+  { icon: FileText, label: "Clinical Notes", active: false },
+  { icon: MessageSquare, label: "Messages", active: false },
+  { icon: Calendar, label: "Schedule", active: false },
+  { icon: BarChart3, label: "Analytics", active: true },
+  { icon: Users, label: "Referral Sources", active: false },
+  { icon: User, label: "Clients", active: false },
 ];
 
 export function Sidebar() {
