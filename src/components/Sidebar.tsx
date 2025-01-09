@@ -1,4 +1,4 @@
-import { Home, Bell, CheckSquare, FileText, MessageSquare, Calendar, BarChart3, Users, User } from "lucide-react";
+import { Home, Bell, CheckSquare, FileText, MessageSquare, Calendar, BarChart3, Users, User, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
