@@ -1,16 +1,17 @@
 import { MoreHorizontal } from "lucide-react";
 
 const platforms = [
-  { name: "LinkedIn", percentage: 47.5 },
-  { name: "Twitter", percentage: 89.2 }
+  { name: "Psychology Today", percentage: 47.5 },
+  { name: "Insurance Directory", percentage: 29.2 },
+  { name: "Website", percentage: 23.3 }
 ];
 
-export function SocialTraffic() {
+export function ReferralSources() {
   return (
     <div className="bg-white rounded-xl p-4 border">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
-          <h3 className="font-semibold">Social Traffic</h3>
+          <h3 className="font-semibold">Referral Sources</h3>
           <button className="text-muted-foreground hover:text-foreground">
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="2"/>

@@ -4,32 +4,32 @@ const regions = [
   {
     country: "United States",
     flag: "🇺🇸",
-    category: "Electronics and Technology",
-    value: 19800,
+    category: "Individual Therapy",
+    value: 198,
     percentage: 55
   },
   {
     country: "Australia",
     flag: "🇦🇺",
-    category: "Fashion, Electronics, and Tech",
-    value: 2320,
+    category: "Group Therapy",
+    value: 72,
     percentage: 20
   },
   {
     country: "Philippines",
     flag: "🇵🇭",
-    category: "Fashion and Computer",
-    value: 9800,
+    category: "Family Counseling",
+    value: 90,
     percentage: 25
   }
 ];
 
-export function RegionDistribution() {
+export function ClientDemographics() {
   return (
     <div className="bg-white rounded-xl p-4 border">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
-          <h3 className="font-semibold">Region Distribution</h3>
+          <h3 className="font-semibold">Client Demographics</h3>
           <button className="text-muted-foreground hover:text-foreground">
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="2"/>
@@ -55,7 +55,7 @@ export function RegionDistribution() {
                 </div>
               </div>
               <div className="text-right">
-                <p className="font-medium">{region.value.toLocaleString()}</p>
+                <p className="font-medium">{region.value}</p>
                 <p className="text-sm text-muted-foreground">{region.percentage}%</p>
               </div>
             </div>
